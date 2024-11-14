@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+figcaption{
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    transform: translateY(110%);
+    transition: .5s all;
+}
+
+figure:hover figcaption{
+    transform: translateY(0%);
+}
+figure img{
+    height: 400px;
+}
+
+@media screen and (max-width:1190px) {
+    figure img{
+        height: 350px;
+        width: 350px;
+    }
+}
+.innerDiv{
+    background-image: url(../imgs/12.webp);
+    background-size: 100% 100%;
+    width: 50%;
+    height: 50%;
+}
+.innerDiv i{
+    cursor: pointer;
+}
